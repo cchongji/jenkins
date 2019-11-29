@@ -1,37 +1,17 @@
 package com.mk.lang;
 
-import junit.framework.Test;
 import junit.framework.TestCase;
-import junit.framework.TestSuite;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
+public class AppTest1 extends TestCase {
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
+	protected void setUp() throws Exception {
+		super.setUp();
+	}
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp1()
+	protected void tearDown() throws Exception {
+		super.tearDown();
+	}
+	public void testApp1()
     {
     	App t = new App( "12345", "ABCDF", 6, 4 );
     	assertEquals("No the same num is on the array",t.getString(t));
